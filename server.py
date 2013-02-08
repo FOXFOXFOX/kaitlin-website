@@ -4,16 +4,16 @@ import pyjade
 
 app = Flask(__name__)
 # use the jade template engine
-app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
+#app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 
 
 @app.route('/')
 def index():
-	obj = {
-		"title": "Michigan Hackers",
-		"text": "Now go hack!"
-	};
-	return render_template('index.jade', **obj)
+	#obj = {
+	#	"title": "Michigan Hackers",
+	#	"text": "Now go hack!"
+	#};
+	return render_template('index.html')
 
 # this guy handles static files
 @app.route('/<path:filename>')
