@@ -1,0 +1,157 @@
+/*----------------------------------------------------------------------------
+Layout CSS for IanPaschal.com
+Designed by Ian Paschal, ©2012
+contact@ianpaschal.com
+http://www.ianpaschal.com/
+----------------------------------------------------------------------------*/
+
+/* RESET -------------------------------------------------------------------*/
+* {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* IMPORTS -----------------------------------------------------------------*/
+@import "vars";
+@import "grid";
+@import "type";
+
+
+/* GENERAL -----------------------------------------------------------------*/
+textarea, input {
+	border: 1px solid #CCC;
+	margin-bottom: @unit_s;
+	padding: 0.5 * @unit_s;
+}
+img {
+	display: block;
+	margin-bottom: @unit_s;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+
+/* LAYOUT ------------------------------------------------------------------*/
+html, body {
+	background: #EEE url('/assets/img/background.png') repeat right top;
+}
+.wrapper {
+	background-color: #FFF;
+	border-color: #DDD;
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	width: @grid_s * 8;
+	margin: 0 auto (@unit_s * 2);
+	padding: @unit_s * 2;
+	overflow: hidden;
+	.header {
+		.container(8,1);
+		.title {
+			.module(8);
+			border-bottom: 2px solid #000;
+			height: (1 * @grid_s) - (@unit_s + 2px); //Compensate for border.
+		}
+	}
+	.menu {
+		.container(2,4);
+		ul {
+			.module(2);
+		}
+	}
+	.content {
+		.container(6,4);
+		.thumbnail {
+			.module(2);
+			height: (2 * @grid_s) - @unit_s;
+		}
+		.fullview, .preview {
+			.module(6);
+			.dashed;
+		}
+		.edit_tile {
+			.module(4);
+			img {
+				margin-left: @unit_s;
+			}
+		}
+		.edit_info {
+			.module(2);
+			input {
+				height: 2 * @unit_s;
+				width: 13 * @unit_s;
+			}
+			h3 {
+				margin-bottom: @unit_s;
+			}
+		}
+		.edit_code {
+			.module(4);
+			textarea {
+				height: 6 * @unit_s;
+				width: 27 * @unit_s;
+				resize: none;
+			}
+			h3 {
+				margin-bottom: @unit_s;
+			}
+			img {
+				margin-right: @unit_s;
+			}
+		}
+		.changes {
+			.module(6);
+			border-bottom: 1px solid #CCC;
+			height: (3 * @unit_s) - 1px; //Compensate for border.
+		}
+		.information {
+			.module(2);
+			.dashed;
+		}
+	}
+	.footer {
+		.container(8,0.2857);
+		.copyright {
+			.module(8);
+			border-top: 2px solid #000;
+			height: 2 * @unit_s; //Compensate for border.
+			p {
+				margin-top: @unit_s;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+.pop_bg {
+  display: none;
+  position: absolute;
+  background-color:rgba(0,0,0,0.5);
+  color: #FFF;
+  top: 16 * @unit_s;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+	height: 4 * @unit_s;
+	width: 13 * @unit_s;
+	padding: @unit_s;
+	input {
+				height: 2 * @unit_s;
+				width: 13 * @unit_s;
+				border: none;
+			}
+  margin: (16 * @unit_s) auto;
+  background-color: #000;
+}

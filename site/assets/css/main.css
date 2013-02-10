@@ -1,0 +1,196 @@
+/*----------------------------------------------------------------------------
+Layout CSS for IanPaschal.com
+Designed by Ian Paschal, ©2012
+contact@ianpaschal.com
+http://www.ianpaschal.com/
+----------------------------------------------------------------------------*/
+/* RESET -------------------------------------------------------------------*/
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/* IMPORTS -----------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+Variables CSS for IanPaschal.com
+Designed by Ian Paschal, ©2012
+contact@ianpaschal.com
+http://www.ianpaschal.com/
+----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+Grid CSS for IanPaschal.com
+Designed by Ian Paschal, ©2012
+contact@ianpaschal.com
+http://www.ianpaschal.com/
+----------------------------------------------------------------------------*/
+/* IMPORTS -----------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+Variables CSS for IanPaschal.com
+Designed by Ian Paschal, ©2012
+contact@ianpaschal.com
+http://www.ianpaschal.com/
+----------------------------------------------------------------------------*/
+/* VARIABLES ---------------------------------------------------------------*/
+/* GRID --------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+Type CSS for Minlio.com
+Designed by Ian Paschal, ©2012
+contact@ianpaschal.com
+http://www.ianpaschal.com/
+----------------------------------------------------------------------------*/
+/* IMPORTS -----------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+Variables CSS for IanPaschal.com
+Designed by Ian Paschal, ©2012
+contact@ianpaschal.com
+http://www.ianpaschal.com/
+----------------------------------------------------------------------------*/
+/* BASIC STYLES ------------------------------------------------------------*/
+/* SPECIFIC STYLES ---------------------------------------------------------*/
+h1 {
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 39px;
+  line-height: 48px;
+}
+h2 {
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  line-height: 32px;
+}
+h3 {
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+}
+p {
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 16px;
+}
+a:link,
+a:visited {
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  border-bottom: 1px dotted #000;
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color .2s linear;
+}
+a:hover {
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7f7f7f;
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+}
+li {
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+}
+/* LAYOUT ------------------------------------------------------------------*/
+html,
+body {
+  background: #eeeeee url('/assets/img/background.png') repeat right top;
+}
+.wrapper {
+  background-color: #FFF;
+  border-bottom: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  width: 896px;
+  margin: 0 auto;
+  overflow: scroll;
+  padding: 32px;
+}
+.wrapper .header {
+  float: left;
+  width: 896px;
+  min-height: 112px;
+}
+.wrapper .header .title {
+  float: left;
+  overflow: hidden;
+  margin: 8px;
+  width: 880px;
+  border-bottom: 2px solid #000;
+  height: 94px;
+}
+.wrapper .menu {
+  float: left;
+  width: 224px;
+  min-height: 448px;
+}
+.wrapper .menu ul {
+  float: left;
+  overflow: hidden;
+  margin: 8px;
+  width: 208px;
+}
+.wrapper .menu ul a {
+  border: none;
+}
+.wrapper .content {
+  float: left;
+  width: 672px;
+  min-height: 448px;
+}
+.wrapper .content .thumbnail {
+  float: left;
+  overflow: hidden;
+  margin: 8px;
+  width: 208px;
+  height: 208px;
+}
+.wrapper .content .thumbnail a {
+  border: none;
+}
+.wrapper .content .thumbnail img {
+  display: block;
+  margin-bottom: 16px;
+}
+.wrapper .content .thumbnail .left {
+  margin-right: 16px;
+}
+.wrapper .content .fullview {
+  float: left;
+  overflow: hidden;
+  margin: 8px;
+  width: 656px;
+}
+.wrapper .content .fullview img {
+  display: block;
+  margin-bottom: 16px;
+}
+.wrapper .content .information {
+  float: left;
+  overflow: hidden;
+  margin: 8px;
+  width: 208px;
+}
+.wrapper .footer {
+  float: left;
+  width: 896px;
+  min-height: 56px;
+}
+.wrapper .footer .copyright {
+  float: left;
+  overflow: hidden;
+  margin: 8px;
+  width: 880px;
+  border-top: 2px solid #000;
+  height: 46px;
+}
+.wrapper .footer .copyright p {
+  margin: 16px 0;
+}

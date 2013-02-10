@@ -1,0 +1,26 @@
+/*----------------------------------------------------------------------------
+Grid CSS for IanPaschal.com
+Designed by Ian Paschal, ©2012
+contact@ianpaschal.com
+http://www.ianpaschal.com/
+----------------------------------------------------------------------------*/
+
+/* IMPORTS -----------------------------------------------------------------*/
+@import "vars";
+
+/* VARIABLES ---------------------------------------------------------------*/
+@grid_s: 7 * @unit_s;
+
+/* GRID --------------------------------------------------------------------*/
+.container (@w: 1, @h: 1) {
+	float: left;
+	width: @w * @grid_s;
+	min-height: @h * @grid_s;
+}
+
+.module (@w: 1,) {
+	float: left;
+	overflow: hidden;
+	margin: @unit_s * 0.5;
+	width: (@w * @grid_s) - @unit_s;
+}

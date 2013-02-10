@@ -1,0 +1,51 @@
+/*----------------------------------------------------------------------------
+Type CSS for Minlio.com
+Designed by Ian Paschal, ©2012
+contact@ianpaschal.com
+http://www.ianpaschal.com/
+----------------------------------------------------------------------------*/
+
+/* IMPORTS -----------------------------------------------------------------*/
+@import "vars";
+
+
+/* BASIC STYLES ------------------------------------------------------------*/
+.type (@scale: 1) {
+	color: @text_c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: @text_s * @scale;
+	line-height: @text_l * @scale;
+}
+
+
+/* SPECIFIC STYLES ---------------------------------------------------------*/
+h1 {
+	.type (3);
+}
+h2 {
+	.type (2);
+}
+h3 {
+	.type (1);
+}
+p {
+	.type (1);
+	margin-bottom: @unit_s;
+}
+a:link, a:visited {
+	.type (1);
+	color: inherit;
+	text-decoration: none;
+	-webkit-transition: color .2s linear;
+}
+a:hover {
+	color: #7f7f7f;
+}
+.dashed {
+	a {
+		border-bottom: 1px dashed #000; 
+	}
+}
+li {
+	.type (1);
+}
